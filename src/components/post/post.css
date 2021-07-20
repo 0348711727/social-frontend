@@ -1,0 +1,105 @@
+.post
+{
+    width: 90%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 1px 7px 0px rgba(0,0,0,0,68);
+    box-shadow: 0px 0px 16px -8px;
+    margin-left: 20px;
+}
+.postWrapper
+{
+    margin: 20px;
+    padding: 10px;
+}
+.postTop
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.postTopLeft
+{
+    display: flex;
+    align-items: center;
+}
+.postProfileImg
+{
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+.postUsername
+{
+    font-size: 16px;
+    font-weight: 550;
+    margin: 0 10px;
+}
+.postDate
+{
+    font-size: 12px;
+}
+.postTopRight
+{
+    cursor: pointer;
+}
+.postCenter
+{
+    margin:  20px 0;
+}
+.postImg
+{
+    margin-top: 20px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+.postBottom
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.postBottomLeft
+{
+    display: flex;
+    align-items: center;
+}
+.likeIcon
+{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.likeIcon:hover
+{
+    width: 50px;
+    height: 50px;
+}
+.postLikeCounter
+{
+    font-size: 15px;
+}
+.postComment
+{
+    cursor: pointer;
+    font-size: 15px;
+}
+.postBottomRight
+{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.postShare
+{
+    margin: 5px;
+    font-size: 15px;
+}
+.postShareIcon
+{
+    font-size: 15px;
+}
