@@ -1,21 +1,21 @@
-import React, { useContext, useRef } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import "./login.css";
 import {loginCall} from "../../apiCalls";
 import {AuthContext} from "../../context/AuthContext";
 import { CircularProgress } from "@material-ui/core";
-
-function Login({myStorage}) {
+// import axios from "axios";
+import axios from "../../Axios_url"; 
+const Login = ({myStorage}) => {
     const email = useRef();
     const password = useRef();
 
     const {user, isFetching, error, dispatch} = useContext(AuthContext);
-    const storage = myStorage;
+
     const handleClick = (e) =>{
         e.preventDefault();
-        // console.log(email.current.value + password.current.value)
-        loginCall({email: email.current.value, password: password.current.value, storage: myStorage}, dispatch);
+        loginCall({email: email.current.value, password: password.current.value}, dispatch);
+        // localStorage.setItem("email", email.current.value)
     }
-    // console.log(user)0
     return (
         <div className="login">
             <div className="loginWrapper">

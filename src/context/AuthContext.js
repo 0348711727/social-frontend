@@ -9,7 +9,7 @@ import AuthReducer from "./AuthReducer";
 //         followers: [],
 //         isAdmin: false,
 //         username: "QUAssNG",
-//         email: "coc@gđmsail",
+//         email: "coccc@gmail.com",
 //         password:"$2b$10$RhOPgZ.voYhshYsb2t39pOICgDnUK4wF9XDYFinNphVb0GoKQvtci",
 //         createdAt:"2021-06-02T10:37:31.747+00:00",
 //         updatedAt:"2021-06-29T14:16:53.753+00:00",

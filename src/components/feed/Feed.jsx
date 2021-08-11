@@ -13,6 +13,8 @@ function Feed(props) {
     const {user}= useContext(AuthContext);
 
     useEffect(()=>{
+        console.log(user.username);
+        
         const fetchPosts = async () =>{
             const respond = username
             ? await axios.get(`${process.env.REACT_APP_BACKEND_URL}/posts/profile/` + username) 

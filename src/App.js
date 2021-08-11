@@ -13,7 +13,7 @@ import { AuthContext } from "./context/AuthContext";
 import Messenger from "./pages/messenger/Messenger";
 
 function App() {
-  const myStorage = window.localStorage;
+  // const myStorage = window.localStorage;
   const {user} = useContext(AuthContext);
   // console.log(user)
   return (
@@ -23,7 +23,7 @@ function App() {
             {user ? <Home/> : <Login />}
           </Route>
           <Route path="/login">
-            {user ? <Redirect to="/" /> : <Login myStorage={myStorage}/>}
+            {user ? <Redirect to="/" /> : <Login />}
           </Route>
           <Route path="/register">
           {user ? <Redirect to="/" /> : <Register />}
